@@ -698,6 +698,7 @@ form textarea {
 
 /* Responsive Media Queries */
 
+
 @media (max-width: 1200px) {
   .header {
     padding: 20px 5%;
@@ -708,6 +709,7 @@ form textarea {
   .contact {
     padding-left: 5%;
   }
+  
 }
 
 @media (max-width: 992px) {
@@ -726,6 +728,7 @@ form textarea {
   }
   .home_img {
     margin-bottom: 30px;
+    width: 50%;
   }
   .about {
     grid-template-columns: 1fr;
@@ -752,14 +755,16 @@ form textarea {
     padding: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  .certificate-card {
-    width: 90%;
-    height: auto;
-  }
+ 
   .card-links {
     flex-direction: column;
     gap: 10px;
-  }
+  } 
+
+  .project-card {
+    width: 100%;
+    height: auto;
+  } 
 }
 
 @media (max-width: 768px) {
@@ -806,6 +811,11 @@ form textarea {
     font-size: 16px;
     padding: 8px;
   }
+
+  .project-card {
+    width: 90%;
+    height: auto;
+  }  
 }
 
 @media (max-width: 480px) {
@@ -823,7 +833,10 @@ form textarea {
     width: 70%;
    margin-top: 60px;
   }
-
+   .home_img {
+    margin-bottom: 30px;
+    width: 70%;
+  }
   .btn_box,
   .read {
     padding: 10px 20px;
@@ -865,10 +878,10 @@ form textarea {
   .certificate-card {
     height: auto;
   }
-  .project-card {
+   .project-card {
     width: 100%;
     height: auto;
-  }
+  } 
   .row img {
     height: auto;
   }
